@@ -1,0 +1,75 @@
+<html><head> 
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+  <script>
+   $(document).ready(function() {
+    $("#messagebox").on('keyup keypress', function() {
+        $(this).height(0);
+        $(this).height(this.scrollHeight);
+        $(this).width(this.scrollWidth);
+    });
+   });
+ </script> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+ <style type="text/css" id="dcoder_stylesheet">body{
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(purple), to(skyblue)) fixed;
+}
+#scroll{
+  margin : 5%;
+  overflow-x : hidden;
+  overflow-y: auto;
+  max-height:20000px;
+  background-color : white;
+  border-top-right-radius : 30px;
+  border-top-left-radius : 30px;
+  border-bottom-right-radius : 30px;
+  border-bottom-left-radius : 30px;
+}
+#write{
+  height : 8%;
+  margin-left : 0%;
+  border: 0;
+  border-top-right-radius : 30px;
+  border-top-left-radius : 30px;
+  border-bottom-right-radius : 30px;
+  border-bottom-left-radius : 30px;
+  box-shadow : 0 0 3px black , 0 0 25px black , 0 0 5px blue;
+  width : 70%;
+}
+#scroll{
+  height : 85%;
+}
+button{
+  up :50px;
+}
+#right{
+  float: right;
+  margin: 2%;
+  outline: none;
+}
+#left{
+  float: left;
+  margin: 2%;
+}
+#sp{
+}</style></head> 
+ <body> 
+  <div id="another"> 
+   <div id="scroll"> 
+    <div id="comment" class="form-group" style="display:none;"> 
+     <textarea class="form-control" id="commentBox">hello</textarea> 
+    </div> 
+   </div> 
+   <span id="sp"> <i id="left" class="fa fa-plus" style="font-size:100px"></i> <textarea name="msg" id="write"></textarea> <span onclick="show()" id="bt"> <i type="submit" id="right" class="fa fa-send-o" style="font-size:100px"></i> </span> </span> 
+  </div> 
+ 
+<script type="text/javascript" id="dcoder_script">function show(){
+  var con = document.createElement("div")
+  var body = document.getElementsByTagName('div')[1];
+  var box = document.createElement("textarea");
+  con.id = "#messagebox"
+  con.appendChild(box);
+  body.appendChild(con);
+  box.style.cssText = "min-width:100px;min-height:100px;margin : 5%;border:0px;box-shadow: 0 0 1px black,0 0 25px lightgreen,0 0 10px blue; background-image: linear-gradient(to bottom right,blue,lightgreen);border-top-right-radius: 40px;border-top-left-radius:40px;border-bottom-left-radius:40px; bottom:0px;right:0px"
+  con.style.cssText = ""
+}</script></body></html>

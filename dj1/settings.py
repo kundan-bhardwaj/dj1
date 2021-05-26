@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'fcm-django',	
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+FCM_DJANGO_SETTINGS = {
+        "FCM_SERVER_KEY": "[BBTVvSyTZoL0CVjafYr4Y5tPv2WyoaR1HD6kK2ZOWt2XsKSWcLwNuHwcyJQA8ZEP5RmwkyXSnl9M02v2dYerDMw]"
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

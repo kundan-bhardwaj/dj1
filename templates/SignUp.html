@@ -1,0 +1,80 @@
+<!doctype html><html><head><style type="text/css" id="dcoder_stylesheet">h1{
+  font-size : 100px;
+  padding-left : 25px;
+  color : white;
+  margin : 50px;
+  text-shadow : 1px 1px 1px black,0 0 25px blue,0 0 5px darkblue;
+  border-color : linear-gradient(red,blue);
+}
+textarea{
+  
+  width: 90%;
+  height: 150px;
+  padding: 35px;
+  outline: none;
+  margin : 5%;
+  font-size: 50px;
+  box-sizing: border-box; 
+  box-shadow : 1px 1px 1px black,0 0 25px magenta,0 0 5px lightyellow;
+  border: 5px solid transparent;
+  -moz-border-radius : 20px;
+  -webkit-border-radius : 20px;
+  border-radius : 20px;
+  resize: none;
+}
+h2{
+  font-size : 60px;
+  margin : 5%;
+}
+form{
+  margin : 5%;
+}
+}
+#layout{
+  background: -webkit-gradient(linear, left top, left bottom, from(#cfe4), to(#aff8)) fixed;
+}
+button{
+  width : 50%;
+  height : 140px;
+  font-size: 60px;
+  margin : 5%;
+  color: white;
+  outline: none;
+  box-shadow: 0 0 1px black,0 0 25px blue,0 0 5px magenta;
+  border-top-right-radius : 80px;
+  border-top-left-radius : 80px;
+  border-bottom-right-radius : 80px;
+  border-bottom-left-radius : 80px;
+  border: 0;
+  background-image : linear-gradient(to top left,blue, magenta);
+}
+body{
+  background: -webkit-gradient(linear, left top, left bottom, from(purple), to(skyblue)) fixed;
+}
+hr{
+  border : 2px solid darkblue;
+  border-radius : 30px;
+}
+#pas{
+  -webkit-text-security : circle;
+}</style></head> 
+ <body id="layout"> 
+  <header> 
+   <h1>Sign up</h1> 
+  </header> 
+  <main> 
+   <hr> 
+   <form action="/postSignUp" method="post">
+     {% csrf_token %} 
+    <textarea wrap="off" placeholder="name" name="username"></textarea> 
+    <textarea id="I'd" wrap="off" placeholder="email address" name="email id"></textarea> 
+    <textarea id="pas" wrap="off" placeholder="password" name="password" type="password"></textarea> 
+    <textarea id="pas" type="password" wrap="off" placeholder="confirm password" name="password"></textarea> 
+    <br> 
+    <button type="submit">submit</button> 
+   </form> 
+  </main> 
+ 
+<script type="text/javascript" id="dcoder_script">if (isAlphaNumeric(x) == true){
+  document.getElementById("pas").style.boxShadow = "10px 20px 30px blue";
+}</script></body></html>
