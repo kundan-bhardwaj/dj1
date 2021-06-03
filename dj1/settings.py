@@ -31,14 +31,21 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'fcm-django',	
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'highlightjs'
 ]
+HIGHLIGHTJS = {
+  'jquery_url': '//code.jquery.com/jquery.min.js',
+  'base_url': '//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js',
+  'css_url': '//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/{0}.min.css',
+  'include_jquery': False,
+  'style': 'monokai_sublime',
+  }
 FCM_DJANGO_SETTINGS = {
         "FCM_SERVER_KEY": "[BBTVvSyTZoL0CVjafYr4Y5tPv2WyoaR1HD6kK2ZOWt2XsKSWcLwNuHwcyJQA8ZEP5RmwkyXSnl9M02v2dYerDMw]"
 }

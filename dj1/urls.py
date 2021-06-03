@@ -24,5 +24,6 @@ urlpatterns = [
     path("SignUp", views.SignUp, name = "SignUp"),
     path("change",views.change, name = "change"),
     path("postSignUp", views.postSignUp, name = "postSignUp"),
-    path('message', views.message, name = "message")
+    path('message', views.message, name = "message"),
+    path("code", views.code, name = "code")
 ]

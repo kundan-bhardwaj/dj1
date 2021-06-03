@@ -40,7 +40,9 @@ def postSignUp(requests):
 	try : 
 		user = auth.create_user_with_email_and_password(id,pas)
 	except :
-		pass
+		return render(requests,"SignUp.html")
 	return render(requests,"postSignUp.html")
 def message(requests):
 	return render(requests,"messanger.html")
+def code(requests):
+	return render(requests,"form.html")
