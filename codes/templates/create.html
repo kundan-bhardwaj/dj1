@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+  <form action="/" method="post">
+    {% csrf_token %}
+    <input type="text" name="format" id="format"/>
+    <input type="text" name="text" class="text"/>
+    <button type="submit" >Upload</button>
+  </form>
+</body>
+</html>

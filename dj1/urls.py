@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 from . import views
 
 urlpatterns = [
@@ -25,5 +27,7 @@ urlpatterns = [
     path("change",views.change, name = "change"),
     path("postSignUp", views.postSignUp, name = "postSignUp"),
     path('message', views.message, name = "message"),
-    path("code", views.code, name = "code")
+    path("create", views.create, name = "create"),
+    path("fill",views.fill,name="fill")
+
 ]

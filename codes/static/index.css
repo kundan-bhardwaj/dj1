@@ -1,0 +1,59 @@
+nav{
+  box-shadow: 0 0 0.1px black,0 0 15px #727CE5,0 0 3px lightblue;
+  width: 90%;
+  text-align: center;
+  height: 60px;
+  margin: 5%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+h1{
+  padding: 5%;
+  color: #151C67;
+}
+.plus{
+  width:20%;
+  height: 70px;
+  float: right;
+  background:
+    linear-gradient(#151C67,#151C67),
+    linear-gradient(#151C67,#151C67),
+    #fff;
+  background-position:center;
+  background-size: 40% 5px,5px 40%; /*thickness = 2px, length = 50% (25px)*/
+  background-repeat:no-repeat;
+  border-radius: 30px;
+  margin: 5%;
+  box-shadow: 0 0 0.1px black,0 0 10px #727CE5,0 0 3px lightblue;
+}
+.plus:hover{
+  
+}
+@keyframes enlarge {
+}
+body{
+  background: -webkit-gradient(linear, left top, left bottom, from(#ACFFF3), to(#B3ACFF)) fixed;
+}
+@media only screen and (min-width: 720px){
+  h1{
+    padding: 2%;
+  }
+  .plus{
+    width: 8%;
+  }
+}
+.btn{
+  color : white ;
+  font-size : 60px;
+  border : 0.01px white ;
+  width : 40% ;
+  height : 140px;
+  background-image: linear-gradient(purple, blue);
+  margin : 35px;
+  border-top-right-radius : 80px ;
+  border-top-left-radius : 80px ;
+  border-bottom-right-radius : 80px ;
+  border-bottom-left-radius : 80px ;
+}

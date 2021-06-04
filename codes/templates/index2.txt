@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+{% load highlightjs %}
+<html lang="en">
+<head>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <link href="{% highlightjs_css_url %}" rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/static/index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="bdy">
+  <nav>
+    <h1># python is amazing</h1>
+  </nav>
+  <div>
+    <button class="btn" type="button" onclick="window.location.href = '/SignIn' "> sign in </button>
+    <button class="btn" type="button" onclick="window.location.href = '/SignUp'">sign up</button>
+  </div>
+  <pre>
+    <code class="python">{{code}}</code>
+  </pre>
+  <div class = "plus" onclick="showProducts(1)"></div>
+  <script src="main.js"></script>
+</body>
+</html>
