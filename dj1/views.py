@@ -27,15 +27,16 @@ Cookie += random.choice(l2)
 Cookie += random.choice(l3)
 
 def index(requests):
-    sess = requests.COOKIES['session']
+    try:
+        sess = requests.COOKIES['session']
+    except:
+        frmt = requests.POST.get("format")
+        txt = requests.POST.get("text")
+        return render(requests,"index2.html",{'code': txt})
     if sess == Cookie :
         frmt = requests.POST.get("format")
         txt = requests.POST.get("text")
         return render(requests ,"index.html",{'code': txt})
-    else:
-        frmt = requests.POST.get("format")
-        txt = requests.POST.get("text")
-        return render(requests,"index2.html",{'code': txt})
 def SignIn(requests):
 	pas = str(requests.POST.get("password"))
 	id = requests.POST.get("email id")

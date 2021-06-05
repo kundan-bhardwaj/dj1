@@ -1,14 +1,29 @@
+{% load static %}
+{% load highlightjs %}
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <link href="{% highlightjs_css_url %}" rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/create.css"/>
+  <title></title>
 </head>
 <body>
-  <form action="/" method="post">
-    {% csrf_token %}
-    <input type="text" name="format" id="format"/>
-    <input type="text" name="text" class="text"/>
-    <button type="submit" >Upload</button>
-  </form>
+  <div id="cont">
+    <form action="/" method="post">
+      {% csrf_token %}
+      <br>
+      <textarea type="text" name="format" id="format" placeholder="title"></textarea>
+      <textarea type="text" name="text" id="text" wrap="off" placeholder="source code"></textarea>
+      <textarea name="discription" id="discription" placeholder="discription" ></textarea>
+      <br>
+      <button type="submit" >Upload</button>
+    </form>
+  </div>
 </body>
 </html>
