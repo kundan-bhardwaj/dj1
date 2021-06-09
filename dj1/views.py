@@ -64,7 +64,6 @@ def data():
     final = zip(user,title,code,discription)
     return final
 def index(requests):
-    main = data()
     try:
         sess = requests.COOKIES['session']
     except:
@@ -81,7 +80,7 @@ def index(requests):
             tit = "--"+title
             dic = {'code': txt,'usr': sess,'title': title,'discription': disc }
             database.child("data").child(tit).set(dic)
-        return render(requests ,"index.html",{"a": main})
+        return render(requests ,"index.html",{"a": data()})
 def SignIn(requests):
 	pas = str(requests.POST.get("password"))
 	id = requests.POST.get("email id")
