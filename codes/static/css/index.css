@@ -1,5 +1,5 @@
 nav{
-  box-shadow: 0 0 1px #065933,0 2px 8px #50CA75,0px 1px 5px #44FFAB;
+  box-shadow: 0 0 1px #065933,0 2px 8px #8500EE,0px 1px 4px #0078FF;
   width: 90%;
   text-align: center;
   height: 60px;
@@ -12,22 +12,22 @@ nav{
 #head{
   font-size: 20px;
   padding: 6%;
-  color: #0F845F;
+  color: #41004C;
 }
 .plus{
   width:20%;
   height: 70px;
   float: right;
   background:
-    linear-gradient(#0F845F,#0F845F),
-    linear-gradient(#0F845F,#0F845F),
+    linear-gradient(#41004C,#41004C),
+    linear-gradient(#41004C,#41004C),
     #fff;
   background-position:center;
   background-size: 40% 5px,5px 40%; /*thickness = 2px, length = 50% (25px)*/
   background-repeat:no-repeat;
   border-radius: 30px;
   margin: 5%;
-  box-shadow:  0 0 1px #065933,0 2px 8px #50CA75,0px 1px 5px #44FFAB;
+  box-shadow: 0 0 1px #065933,0 2px 8px #8500EE,0px 1px 5px #0078FF;
 }
 #pro{
   width: 100%;
@@ -46,9 +46,6 @@ nav{
 }
 @keyframes enlarge {
 }
-body{
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#FFFFFF)) fixed;
-}
 @media screen and (min-width: 720px){
   #head{
     padding: 2%;
@@ -66,4 +63,35 @@ body{
     width: 100%;
     height: 70px;
   }
+}
+#title{
+    font-family: Verdana;
+    margin-left: 5%;
+    color: #41004C;
+}
+#name{
+    font-family: cursive;
+    margin: 5%;
+}
+#discription{
+    font-family: fantasy;
+    margin: 5%;
+}
+#codebox{
+    margin: 5%;
+    border: 8px solid #C051FF;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#outer{
+    overflow: hidden;
+    min-height: 300px;
+    margin: 4%;
+    box-shadow: 0 0 1px #065933,0 2px 8px #8500EE,0px 1px 5px #0078FF;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }

@@ -50,7 +50,7 @@ HIGHLIGHTJS = {
   'base_url': '//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js',
   'css_url': '//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/{0}.min.css',
   'include_jquery': False,
-  'style': 'monokai_sublime',
+  'style': 'github',
   }
 FCM_DJANGO_SETTINGS = {
         "FCM_SERVER_KEY": "[BBTVvSyTZoL0CVjafYr4Y5tPv2WyoaR1HD6kK2ZOWt2XsKSWcLwNuHwcyJQA8ZEP5RmwkyXSnl9M02v2dYerDMw]"

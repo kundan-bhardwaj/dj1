@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% load static %}
 {% load highlightjs %}
+
 <html lang="en">
 <head>
   <script src="//code.jquery.com/jquery.min.js"></script>
@@ -10,24 +11,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="/static/index.css" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css">
 </head>
-
-<body class="bdy">
+<body id="bdy">
   <nav>
-    <h1 id="head"># python is amazing</h1>
+    <h1 id="head">Hello {{usr}} !</h1>
   </nav>
-  <div id="pro">
-    <div id="profile" class="profile"></div>
-  </div>
   <br>
-  <div id="code">
-    <pre>
-      <code class="python">{{code}}</code>
-    </pre>
+  <div id="co">
+      {% for i,j,k,l in a %}
+         <div id="outer">
+             <h1 id="title" class="text">{{j}}</h1>
+             <h2 id="name" class="text">Added by {{i}}</h2>
+             <pre>
+                 <code id="codebox" wrap = "off" class="python">{{k}}</code>
+             </pre>
+             <h3 id="discription" class="text">{{l}}</h3>
+         </div>
+      {% endfor %}
   </div>
   <br>
   <div class = "plus" onclick="window.location.href = '/fill'"></div>
-  <script src="main.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/static/create.css"/>
+  <link rel="stylesheet" href= "{% static 'css/create.css' %}">
   <title></title>
 </head>
 <body>
@@ -18,7 +18,7 @@
     <form action="/" method="post">
       {% csrf_token %}
       <br>
-      <textarea type="text" name="format" id="format" placeholder="title"></textarea>
+      <textarea type="text" name="title" id="title" placeholder="title"></textarea>
       <textarea type="text" name="text" id="text" wrap="off" placeholder="source code"></textarea>
       <textarea name="discription" id="discription" placeholder="discription" ></textarea>
       <br>

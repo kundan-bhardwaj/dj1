@@ -10,7 +10,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="/static/SignIn.css" rel="stylesheet" type="text/css">
+  <link href="/static/css/SignIn.css" rel="stylesheet" type="text/css">
   </link>
 </head>
 <body id="layout">
@@ -22,7 +22,7 @@
   <main> 
    <hr>
    <div id="contain">
-      <form action="/change" method="post">
+      <form action="/postSignIn" method="post">
         {% csrf_token %}
         <br>
         <textarea wrap="off" placeholder="email address" name="email id"></textarea> 

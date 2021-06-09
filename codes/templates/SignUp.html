@@ -3,7 +3,7 @@
 <!doctype html>
 <html>
 <head>
-  <link rel="stylesheet" href="/static/SignUp.css">
+  <link rel="stylesheet" href="/static/css/SignUp.css">
   </link>
   <script src="//code.jquery.com/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
@@ -13,7 +13,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head> 
- <body id="layout"> 
+ <body id="layout">
+  {% if msg %}
+  <script>
+      alert("{{msg}}");
+  </script>
+  {% endif %}
   <header> 
    <h1>Sign up</h1> 
   </header> 
@@ -26,10 +31,10 @@
       <textarea wrap="off" placeholder="name" name="username"></textarea> 
       <textarea id="I'd" wrap="off" placeholder="email address" name="email id"></textarea> 
       <textarea id="pas" wrap="off" placeholder="password" name="password" type="password"></textarea> 
-      <textarea id="pas" type="password" wrap="off" placeholder="confirm password" name="password"></textarea> 
+      <textarea id="pas" type="password" wrap="off" placeholder="confirm password" name="password2"></textarea> 
       <br> 
         <button type="submit">submit</button> 
-    </form>
+    </form>l
   </div>
   </main> 
  

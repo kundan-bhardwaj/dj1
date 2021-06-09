@@ -1,7 +1,7 @@
 h1{
   font-size : 50px;
   padding-left : 25px;
-  color : #0F845F;
+  color : #41004C;
   margin : 5%;
   border-color : linear-gradient(red,blue);
 }
@@ -13,7 +13,7 @@ textarea{
   margin : 5%;
   font-size: 20px;
   box-sizing: border-box;
-  box-shadow :  0 0 1px #065933,0 2px 15px #50CA75,0px 1px 5px #44FFAB;
+  box-shadow : 0 0 1px #065933,0 2px 8px #8500EE,0px 1px 4px #0078FF;0
   border: 5px solid transparent;
   -moz-border-radius : 20px;
   -webkit-border-radius : 20px;
@@ -41,13 +41,13 @@ button{
   border-bottom-right-radius : 80px;
   border-bottom-left-radius : 80px;
   border: 0;
-  background : #0F845F;
+  background : #41004C;
 }
 body{
   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#FFFFFF)) fixed;
 }
 hr{
-  border : 2px solid #0F845F;
+  border : 2px solid  #41004C;
   border-radius : 30px;
 }
 #pas{
