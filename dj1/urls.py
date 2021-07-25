@@ -26,8 +26,9 @@ urlpatterns = [
     path("SignUp", views.SignUp, name = "SignUp"),
     path("postSignIn",views.postSignIn, name = "postSignIn"),
     path("postSignUp", views.postSignUp, name = "postSignUp"),
-    path('message', views.message, name = "message"),
     path("create", views.create, name = "create"),
     path("fill",views.fill,name="fill")
+    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 
 ]

@@ -43,7 +43,6 @@ def data():
     titles = []
     for i in d:
         titles.append(i)
-    print(titles)
     user = []
     title = []
     code = []
@@ -57,21 +56,16 @@ def data():
         title.append(t)
         code.append(c)
         discription.append(d)
-    print(user)
-    print(title)
-    print(code)
-    print(discription)
     final = zip(user,title,code,discription)
     return final
 def index(requests):
     try:
         sess = requests.COOKIES['session']
     except:
-        title = requests.POST.get("title")
-        txt = requests.POST.get("text")
-        disc = requests.POST.get("discription")
-        return render(requests,"index2.html",{'code': txt,'title': dumps(title),'discription': dumps(disc)})
+        give = data()
+        return render(requests,"index2.html",{'a' : give})
     if sess :
+        give = data()
         title = requests.POST.get("title")
         txt = requests.POST.get("text")
         disc = requests.POST.get("discription")
@@ -80,7 +74,7 @@ def index(requests):
             tit = "--"+title
             dic = {'code': txt,'usr': sess,'title': title,'discription': disc }
             database.child("data").child(tit).set(dic)
-        return render(requests ,"index.html",{"a": data()})
+        return render(requests ,"index.html",{"a": give})
 def SignIn(requests):
 	pas = str(requests.POST.get("password"))
 	id = requests.POST.get("email id")
@@ -116,8 +110,6 @@ def postSignUp(requests):
     except :
         return render(requests,"SignUp.html")
     return render(requests,"postSignUp.html")
-def message(requests):
-	return render(requests,"messanger.html")
 def fill(requests):
     return render(requests,"create.html")
 def create(requests):

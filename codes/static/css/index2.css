@@ -45,3 +45,35 @@ hr{
     width: 12%;
   }
 }
+#title{
+    font-family: Verdana;
+    margin-left: 5%;
+    color: #41004C;
+}
+#name{
+    font-family: cursive;
+    margin: 5%;
+}
+#discription{
+    font-style: Courier;
+    margin: 5%;
+}
+#codebox{
+    margin: 3%;
+    margin-bottom: 0%;
+    border: 4px solid #00E3FF;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#outer{
+    overflow: hidden;
+    min-height: 300px;
+    margin: 2%;
+    box-shadow: 0 0 1px #065933,0 2px 8px #8500EE,0px 1px 5px #0078FF;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

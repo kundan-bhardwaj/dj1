@@ -90,25 +90,10 @@ nav{
     overflow: hidden;
     min-height: 300px;
     margin: 2%;
+    margin-top: 5%;
     box-shadow: 0 0 1px #065933,0 2px 8px #8500EE,0px 1px 5px #0078FF;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-}
-.icon{
-    margin: 0.01%;
-    width: 99%;
-    margin-top: 0%;
-    display: inline-block;
-}
-#like{
-    float: left;
-}
-#copy{
-    float : right;
-}
-#line{
-    width: 12%;
-    display: flex;
 }

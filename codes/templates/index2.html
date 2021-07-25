@@ -17,15 +17,24 @@
   <nav>
     <h1># python is amazing</h1>
   </nav>
-  <pre>
-    <code class="python">{{code}}</code>
-  </pre>
+  <div id="co">
+      {% for i,j,k,l in a %}
+         <div id="outer">
+             <h1 id="title" class="text">{{j}}</h1>
+             <h2 id="name" class="text">Added by {{i}}</h2>
+             <pre>
+                 <code id="codebox" wrap = "off" class="python">{{k}}</code>
+                 <h2 unselectable = "on" id="like" onclick = "change()">🤍</h2><h2 unselectable = "on" id="copy" onclick="copy()">📋</h2>
+             </pre>
+             <br>
+             <p id="discription" class="text">{{l}}</p>
+         </div>
+      {% endfor %}
+  </div>
   <hr>
   <div id="button">
     <button class="btn" type="button" onclick="window.location.href = '/SignIn' "> sign in </button>
     <button class="btn" type="button" onclick="window.location.href = '/SignUp'">sign up</button>
   </div>
-  <div class = "plus" onclick="showProducts(1)"></div>
-  <script src="main.js"></script>
 </body>
 </html>
