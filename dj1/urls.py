@@ -28,7 +28,4 @@ urlpatterns = [
     path("postSignUp", views.postSignUp, name = "postSignUp"),
     path("create", views.create, name = "create"),
     path("fill",views.fill,name="fill")
-    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
-    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
-
 ]
